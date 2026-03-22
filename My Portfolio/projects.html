@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,23 @@
         <div id="nav-content">
             <h2 style="color: white;">Projects</h2>
             <h3 style="color: #d2d5da;">My work and practice projects</h3>
-            <div id="pages">
+            <!-- <div id="pages">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html" style="background-color:#3A4150;">Projects</a>
                 <a href="contact.html">Contact</a>
+            </div> -->
+
+            <div id="menu">
+                <button id="menu-btn">Menu ☰</button>
+                    <div id="dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
             </div>
+
         </div>
     </nav>
     <div class="main">
@@ -56,10 +67,19 @@
                 </ul>
             </div>
         </div>
-        
     </div>
+
+    <div id="modal" class="modal">
+    <div class="modal-content">
+    <span id="close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    </div>
+
+</div>
     <nav class="bottom-nav">
         <p>© 2026 Student Portfolio | Web Technology Lab</p>
-    </nav>  
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>  
